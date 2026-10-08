@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Priyadharshini C. | Data Analyst Portfolio</title>
+<meta name="description" content="Portfolio of Priyadharshini C., Data Analyst and Data Science Intern skilled in Python, SQL, Power BI, Excel and data visualization.">
+<meta property="og:title" content="Priyadharshini C. | Data Analyst Portfolio">
+<meta property="og:description" content="Transforming data into meaningful insights with Python, SQL, Power BI and Excel.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#eef2f8;--card:#fff;--ink:#0f1b33;--mute:#5b6a85;--line:#e3e9f3;--blue:#2457e6;--blue2:#e8efff;--teal:#0ea5a4}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{font-family:"Plus Jakarta Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px;border-radius:6px}
+.skip{position:absolute;left:-999px;background:var(--blue);color:#fff;padding:8px 14px;z-index:99}
+.skip:focus{left:8px;top:8px}
+.wrap{max-width:1100px;margin:0 auto;padding:0 22px}
+section{padding:84px 0}
+h2{font-size:clamp(1.6rem,3vw,2.1rem);letter-spacing:-.02em;line-height:1.2}
+.sub{color:var(--mute);margin:8px 0 34px;max-width:56ch}
+svg{width:1em;height:1em;fill:currentColor;flex:none}
+/* nav */
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.88);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-weight:800;letter-spacing:-.02em;display:flex;align-items:center;gap:9px}
+.logo i{font-style:normal;background:var(--blue);color:#fff;width:30px;height:30px;border-radius:8px;display:grid;place-items:center;font-size:.8rem}
+nav ul{display:flex;gap:4px;list-style:none;padding:0}
+nav ul a{display:block;padding:8px 12px;border-radius:8px;font-size:.92rem;font-weight:500;color:var(--mute);transition:.2s}
+nav ul a:hover,nav ul a.on{color:var(--blue);background:var(--blue2)}
+.menu{display:none;background:none;border:1px solid var(--line);border-radius:8px;padding:8px 10px;font-size:1.2rem;cursor:pointer;color:var(--ink)}
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 18px;border-radius:10px;font-weight:600;font-size:.93rem;border:1px solid var(--line);background:#fff;cursor:pointer;font-family:inherit;color:var(--ink);transition:.2s}
+.btn:hover{border-color:var(--blue);color:var(--blue)}
+.btn.pri{background:var(--blue);border-color:var(--blue);color:#fff}
+.btn.pri:hover{background:#1a46c4;color:#fff}
+.btn.sm{padding:8px 14px;font-size:.86rem}
+/* hero */
+.hero{padding:72px 0 64px;background:linear-gradient(180deg,#e3ebfa 0%,#eef2f8 100%)}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+.pill{display:inline-flex;align-items:center;gap:8px;background:var(--blue2);color:var(--blue);font-weight:600;font-size:.85rem;padding:6px 12px;border-radius:99px;margin-bottom:18px}
+.pill b{width:8px;height:8px;border-radius:50%;background:var(--teal)}
+h1{font-size:clamp(2.2rem,5vw,3.5rem);line-height:1.08;letter-spacing:-.035em}
+.role{font-size:1.25rem;font-weight:600;color:var(--blue);margin:12px 0 16px}
+.hero p.d{color:var(--mute);max-width:52ch;font-size:1.05rem}
+.cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.dash{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px;box-shadow:0 18px 50px -24px rgba(36,87,230,.35)}
+.dash .bar{display:flex;gap:6px;margin-bottom:16px}
+.dash .bar span{width:10px;height:10px;border-radius:50%;background:var(--line)}
+.kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:14px}
+.kpi{background:var(--bg);border-radius:12px;padding:12px}
+.kpi b{display:block;font-size:1.5rem;letter-spacing:-.02em}
+.kpi small{color:var(--mute);font-size:.78rem}
+.chart{background:var(--bg);border-radius:12px;padding:14px}
+.chart svg{width:100%;height:auto;display:block}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.chip{background:var(--blue2);color:var(--blue);font-size:.8rem;font-weight:600;padding:4px 10px;border-radius:99px}
+/* about */
+.about{display:grid;grid-template-columns:.7fr 1.3fr;gap:44px;align-items:center}
+.avatar{aspect-ratio:1;max-width:300px;width:100%;border-radius:24px;background:linear-gradient(135deg,var(--blue),#6d9bff);display:grid;place-items:center;color:#fff;font-size:4.2rem;font-weight:800;letter-spacing:-.04em;position:relative;margin:auto}
+.avatar::after{content:"Open to work";position:absolute;bottom:-14px;right:-10px;background:#fff;color:var(--ink);font-size:.8rem;font-weight:600;padding:6px 12px;border-radius:99px;border:1px solid var(--line);letter-spacing:0;box-shadow:0 6px 18px -8px rgba(0,0,0,.25)}
+.about p{font-size:1.1rem;color:#33415c;max-width:60ch}
+/* cards */
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;transition:transform .2s,box-shadow .2s,border-color .2s}
+.card:hover{transform:translateY(-3px);border-color:#c5d4fb;box-shadow:0 14px 34px -20px rgba(36,87,230,.5)}
+.skills{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:14px}
+.skill{display:flex;align-items:center;gap:12px;font-weight:600;padding:16px}
+.ico{width:42px;height:42px;border-radius:11px;display:grid;place-items:center;font-weight:800;font-size:.85rem;flex:none}
+/* projects */
+.projects{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.proj{display:flex;flex-direction:column;padding:0;overflow:hidden}
+.prev{height:170px;background:linear-gradient(135deg,#eaf0ff,#f6f9ff);border-bottom:1px solid var(--line);padding:18px;display:flex;align-items:flex-end}
+.prev svg{width:100%;height:100%}
+.pb{padding:22px;display:flex;flex-direction:column;gap:14px;flex:1}
+.pb h3{font-size:1.2rem;letter-spacing:-.01em}
+.pb p{color:var(--mute);font-size:.95rem}
+.feat{list-style:none;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:6px 14px;font-size:.88rem}
+.feat li{display:flex;gap:7px;align-items:flex-start}
+.feat li::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--blue);margin-top:8px;flex:none}
+.acts{display:flex;gap:10px;margin-top:auto;flex-wrap:wrap}
+/* timeline */
+.tl{position:relative;display:grid;gap:18px;padding-left:30px}
+.tl::before{content:"";position:absolute;left:8px;top:6px;bottom:6px;width:2px;background:var(--line)}
+.tl .card{position:relative}
+.tl .card::before{content:"";position:absolute;left:-30px;top:28px;width:12px;height:12px;border-radius:50%;background:#fff;border:3px solid var(--blue)}
+.tl h3{font-size:1.1rem}.tl .org{color:var(--blue);font-weight:600;margin-bottom:6px}
+.tl p{color:var(--mute)}
+.tag{display:inline-block;font-size:.78rem;font-weight:600;padding:3px 10px;border-radius:99px;background:#e6f7f6;color:#0b7a79;margin-bottom:8px}
+.tag.past{background:var(--bg);color:var(--mute)}
+/* certs */
+.certs{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+.cert{display:flex;gap:14px;align-items:flex-start}
+.cert .ico{background:var(--blue2);color:var(--blue);font-size:1.3rem}
+.cert b{display:block;line-height:1.35}.cert span{font-size:.85rem;color:var(--mute)}
+/* contact */
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.links{display:grid;gap:10px;margin-top:22px}
+.links a{display:flex;gap:12px;align-items:center;padding:13px 16px;font-weight:600}
+.links svg{font-size:1.2rem;color:var(--blue)}
+form{display:grid;gap:14px}
+label{font-weight:600;font-size:.88rem;display:grid;gap:6px}
+input,textarea{font:inherit;padding:12px 14px;border:1px solid var(--line);border-radius:10px;background:#fff;color:var(--ink)}
+input:focus,textarea:focus{outline:2px solid var(--blue);border-color:var(--blue)}
+textarea{min-height:120px;resize:vertical}
+.msg{font-size:.9rem;font-weight:600;color:#0b7a79;min-height:1.3em}
+footer{padding:28px 0;text-align:center;color:#b6c2d9;font-size:.9rem;background:#0f1b33}
+@media(max-width:860px){
+.menu{display:block}
+nav ul{display:none;position:absolute;top:64px;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);flex-direction:column;padding:10px 22px 16px}
+nav ul.open{display:flex}
+.hero .wrap,.about,.projects,.contact{grid-template-columns:1fr}
+section{padding:60px 0}
+}
+@media(max-width:480px){.feat{grid-template-columns:1fr}.kpis{gap:6px}.kpi b{font-size:1.2rem}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header>
+<div class="wrap"><nav aria-label="Main navigation">
+<a href="#home" class="logo"><i>PC</i>Priyadharshini C.</a>
+<button class="menu" aria-label="Toggle menu" aria-expanded="false" aria-controls="links">&#9776;</button>
+<ul id="links">
+<li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li><li><a href="#projects">Projects</a></li><li><a href="#experience">Experience</a></li><li><a href="#certifications">Certifications</a></li><li><a href="#contact">Contact</a></li>
+</ul></nav></div>
+</header>
+
+<main id="main">
+<section class="hero" id="home">
+<div class="wrap">
+<div>
+<span class="pill"><b></b>Open to Data Analyst roles</span>
+<h1>Hi, I'm Priyadharshini C.</h1>
+<p class="role">Data Analyst | Data Science Intern</p>
+<p class="d">Passionate about transforming data into meaningful insights using Python, SQL, Power BI, Excel, and data visualization.</p>
+<div class="cta">
+<a class="btn pri" href="#projects">View My Projects</a>
+<!-- TODO: replace # with your resume file, e.g. resume.pdf -->
+<a class="btn" href="#" download>Download Resume</a>
+<a class="btn" href="https://github.com/priyachinniah2006-sys" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg viewBox="0 0 24 24"><path d="M12 .5a11.5 11.5 0 0 0-3.6 22.4c.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.4 1 .1-.8.4-1.3.8-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.500.1-3.100 0 0 1-.3 3.200 1.200a11 11 0 0 1 5.800 0c2.200-1.500 3.200-1.200 3.200-1.200.6 1.600.2 2.800.1 3.100.8.8 1.200 1.800 1.200 3.100 0 4.400-2.700 5.400-5.300 5.700.4.4.8 1.100.8 2.200v3.200c0 .3.2.7.8.6A11.500 11.500 0 0 0 12 .5z"/></svg>GitHub</a>
+<a class="btn" href="https://www.linkedin.com/in/priyadharshini2006/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3zM9.5 9.5h3.800v1.600h.1c.5-1 1.800-2 3.800-2 4 0 4.800 2.600 4.800 6V21h-4v-5c0-1.200 0-2.800-1.700-2.800s-2 1.300-2 2.700V21h-4z"/></svg>LinkedIn</a>
+</div>
+</div>
+<div class="dash" role="img" aria-label="Illustration of an analytics dashboard with KPI tiles and charts">
+<div class="bar"><span></span><span></span><span></span></div>
+<div class="kpis"><div class="kpi"><b>2</b><small>Internships</small></div><div class="kpi"><b>2</b><small>Projects</small></div><div class="kpi"><b>4</b><small>Certifications</small></div></div>
+<div class="chart"><svg viewBox="0 0 320 130" aria-hidden="true">
+<g fill="#c9d8ff"><rect x="10" y="70" width="28" height="50" rx="4"/><rect x="52" y="52" width="28" height="68" rx="4"/><rect x="94" y="80" width="28" height="40" rx="4"/><rect x="136" y="38" width="28" height="82" rx="4" fill="#2457e6"/><rect x="178" y="58" width="28" height="62" rx="4"/><rect x="220" y="28" width="28" height="92" rx="4" fill="#2457e6"/><rect x="262" y="46" width="28" height="74" rx="4"/></g>
+<polyline points="24,62 66,44 108,70 150,30 192,48 234,18 276,36" fill="none" stroke="#0ea5a4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+<div class="chips"><span class="chip">Python</span><span class="chip">SQL</span><span class="chip">Power BI</span><span class="chip">Excel</span></div>
+</div>
+</div>
+</section>
+
+<section id="about"><div class="wrap about">
+<div class="avatar" role="img" aria-label="Profile placeholder with initials PC">PC</div>
+<div><h2>About Me</h2><p class="sub" style="margin-bottom:18px"></p>
+<p>I am a passionate Computer Science Engineering student and Data Science Intern interested in Data Analytics, Data Science, and Business Intelligence. I enjoy working with data to discover insights, create meaningful visualizations, and solve real-world problems.</p></div>
+</div></section>
+
+<section id="skills" style="background:#fbfcfe"><div class="wrap">
+<h2>Skills</h2><p class="sub">Tools and methods I use to turn raw data into decisions.</p>
+<div class="skills">
+<div class="card skill"><span class="ico" style="background:#e8efff;color:#2457e6">Py</span>Python</div>
+<div class="card skill"><span class="ico" style="background:#ece8ff;color:#5b3fd1">Pd</span>Pandas &amp; NumPy</div>
+<div class="card skill"><span class="ico" style="background:#e6f7f6;color:#0b7a79"><svg viewBox="0 0 24 24" width="22" height="22"><path d="M4 20V10h3.500v10zm6.500 0V4H14v16zm6.500 0v-7h3.500v7z"/></svg></span>Data Analytics</div>
+<div class="card skill"><span class="ico" style="background:#fff1e0;color:#c76a00"><svg viewBox="0 0 24 24" width="22" height="22"><path d="M3 3h2v16h16v2H3zm5 9h3v6H8zm5-5h3v11h-3zm5 3h3v8h-3z"/></svg></span>Data Visualization</div>
+<div class="card skill"><span class="ico" style="background:#fff6d6;color:#b58400">BI</span>Power BI</div>
+<div class="card skill"><span class="ico" style="background:#e3f5e8;color:#1b7f3b">Xl</span>Excel</div>
+<div class="card skill"><span class="ico" style="background:#e0f0fa;color:#0b6a9b">SQL</span>SQL</div>
+<div class="card skill"><span class="ico" style="background:#fde8f0;color:#c0275e">ML</span>Machine Learning</div>
+<div class="card skill"><span class="ico" style="background:#eceff4;color:#1f2937"><svg viewBox="0 0 24 24" width="22" height="22"><path d="M12 .5a11.500 11.500 0 0 0-3.600 22.400c.6.100.8-.3.8-.6v-2c-3.200.7-3.900-1.500-3.900-1.500-.5-1.300-1.300-1.700-1.300-1.700-1-.7.1-.7.1-.7 1.200.1 1.800 1.200 1.800 1.200 1 1.800 2.800 1.300 3.400 1 .1-.8.4-1.300.8-1.600-2.600-.3-5.300-1.300-5.300-5.700 0-1.300.5-2.300 1.200-3.100-.1-.3-.5-1.500.1-3.100 0 0 1-.3 3.200 1.200a11 11 0 0 1 5.800 0c2.200-1.500 3.200-1.200 3.200-1.200.6 1.600.2 2.800.1 3.100.8.8 1.200 1.800 1.200 3.100 0 4.400-2.700 5.400-5.300 5.700.4.4.8 1.100.8 2.200v3.200c0 .3.2.7.8.6A11.500 11.500 0 0 0 12 .5z"/></svg></span>Git &amp; GitHub</div>
+</div></div></section>
+
+<section id="projects"><div class="wrap">
+<h2>Projects</h2><p class="sub">Two projects covering the full path from raw data to insight.</p>
+<div class="projects">
+<article class="card proj">
+<div class="prev"><svg viewBox="0 0 300 130" aria-hidden="true"><g fill="#c9d8ff"><rect x="10" y="60" width="24" height="60" rx="4"/><rect x="44" y="40" width="24" height="80" rx="4"/><rect x="78" y="70" width="24" height="50" rx="4"/><rect x="112" y="30" width="24" height="90" rx="4" fill="#2457e6"/></g><g fill="#2457e6" opacity=".75"><circle cx="190" cy="90" r="5"/><circle cx="210" cy="75" r="5"/><circle cx="228" cy="60" r="5"/><circle cx="246" cy="50" r="5"/><circle cx="262" cy="35" r="5"/><circle cx="220" cy="85" r="5"/></g><line x1="180" y1="100" x2="275" y2="28" stroke="#0ea5a4" stroke-width="2.500"/></svg></div>
+<div class="pb">
+<h3>Health &amp; Fitness Data Analysis</h3>
+<p>Analyzed health and fitness data using Python to identify patterns, relationships, and factors affecting fitness goals.</p>
+<ul class="feat"><li>Data cleaning</li><li>Exploratory Data Analysis</li><li>Regression analysis</li><li>Classification models</li><li>Fitness goal analysis</li></ul>
+<div class="chips" style="margin:0"><span class="chip">Python</span><span class="chip">Pandas</span><span class="chip">Matplotlib</span><span class="chip">Scikit-learn</span></div>
+<div class="acts"><a class="btn pri sm" href="https://github.com/priyachinniah2006-sys" target="_blank" rel="noopener noreferrer">GitHub</a><a class="btn sm" href="#">Project Details</a></div>
+</div></article>
+<article class="card proj">
+<div class="prev"><svg viewBox="0 0 300 130" aria-hidden="true"><rect x="4" y="6" width="86" height="34" rx="6" fill="#fff" stroke="#c9d8ff"/><rect x="107" y="6" width="86" height="34" rx="6" fill="#fff" stroke="#c9d8ff"/><rect x="210" y="6" width="86" height="34" rx="6" fill="#fff" stroke="#c9d8ff"/><g fill="#c9d8ff"><rect x="4" y="52" width="20" height="70" rx="3"/><rect x="30" y="68" width="20" height="54" rx="3" fill="#2457e6"/><rect x="56" y="58" width="20" height="64" rx="3"/><rect x="82" y="82" width="20" height="40" rx="3"/></g><polyline points="130,110 160,84 190,96 220,62 250,72 290,44" fill="none" stroke="#2457e6" stroke-width="3" stroke-linecap="round"/><circle cx="35" cy="26" r="5" fill="#f2c811"/><circle cx="138" cy="26" r="5" fill="#0ea5a4"/><circle cx="241" cy="26" r="5" fill="#2457e6"/></svg></div>
+<div class="pb">
+<h3>Power BI Health &amp; Fitness Dashboard</h3>
+<p>Created an interactive Power BI dashboard to analyze health and fitness metrics and present meaningful insights through visualizations.</p>
+<ul class="feat"><li>Data transformation</li><li>Data modeling</li><li>Relationships</li><li>Interactive charts</li><li>KPI visualization</li></ul>
+<div class="chips" style="margin:0"><span class="chip">Power BI</span><span class="chip">Excel</span></div>
+<div class="acts"><a class="btn pri sm" href="https://github.com/priyachinniah2006-sys" target="_blank" rel="noopener noreferrer">GitHub</a><a class="btn sm" href="#">View Dashboard</a></div>
+</div></article>
+</div></div></section>
+
+<section id="experience" style="background:#fbfcfe"><div class="wrap">
+<h2>Experience</h2><p class="sub">Hands-on work applying analytics and AI to practical projects.</p>
+<div class="tl">
+<article class="card"><span class="tag">Current</span><h3>Data Science Intern</h3><p class="org">DVein Innovations</p>
+<p>Working on data science and analytics tasks, applying Python, data analysis, visualization, and machine learning concepts to practical projects.</p></article>
+<article class="card"><span class="tag past">Completed</span><h3>Generative AI Intern</h3><p class="org">Creator Space Lab</p>
+<p>Gained practical exposure to Generative AI, prompt engineering, AI tools, and AI-based applications through hands-on learning and projects.</p></article>
+</div></div></section>
+
+<section id="certifications"><div class="wrap">
+<h2>Certifications</h2><p class="sub">Formal training that backs up the hands-on work.</p>
+<div class="certs">
+<div class="card cert"><span class="ico"><svg viewBox="0 0 24 24" width="24" height="24"><path d="M12 2l2.400 5 5.600.8-4 3.900.9 5.600L12 14.700 7.100 17.300l.9-5.600-4-3.900L9.600 7z"/></svg></span><div><b>Generative AI Internship</b><span>Creator Space Lab</span></div></div>
+<div class="card cert"><span class="ico"><svg viewBox="0 0 24 24" width="24" height="24"><path d="M12 2l2.400 5 5.600.8-4 3.900.9 5.600L12 14.700 7.100 17.300l.9-5.600-4-3.900L9.600 7z"/></svg></span><div><b>Data Science &amp; Analytics</b><span>Certification</span></div></div>
+<div class="card cert"><span class="ico"><svg viewBox="0 0 24 24" width="24" height="24"><path d="M12 2l2.400 5 5.600.8-4 3.900.9 5.600L12 14.700 7.100 17.300l.9-5.600-4-3.900L9.600 7z"/></svg></span><div><b>Data Analytics</b><span>Certification</span></div></div>
+<div class="card cert"><span class="ico"><svg viewBox="0 0 24 24" width="24" height="24"><path d="M12 2l2.400 5 5.600.8-4 3.900.9 5.600L12 14.700 7.100 17.300l.9-5.600-4-3.900L9.600 7z"/></svg></span><div><b>Power BI</b><span>Certification</span></div></div>
+</div></div></section>
+
+<section id="contact" style="background:#fbfcfe"><div class="wrap contact">
+<div>
+<h2>Let's Connect</h2>
+<p class="sub" style="margin-bottom:0">I am currently seeking Data Analyst and Data Analytics opportunities where I can apply my skills, learn from real-world projects, and contribute to meaningful data-driven solutions.</p>
+<div class="links">
+<a class="card" href="mailto:priyachinniah2006@gmail.com"><svg viewBox="0 0 24 24"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm9 7L4.500 7v1.500L12 13.500l7.500-5V7z"/></svg>priyachinniah2006@gmail.com</a>
+<a class="card" href="https://github.com/priyachinniah2006-sys" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24"><path d="M12 .5a11.500 11.500 0 0 0-3.600 22.400c.6.100.8-.3.8-.6v-2c-3.200.7-3.900-1.500-3.900-1.500-.5-1.300-1.300-1.700-1.300-1.700-1-.7.1-.7.1-.7 1.200.1 1.800 1.200 1.800 1.200 1 1.800 2.800 1.300 3.400 1 .1-.8.4-1.300.8-1.600-2.600-.3-5.300-1.300-5.300-5.700 0-1.300.5-2.300 1.200-3.100-.1-.3-.5-1.500.1-3.100 0 0 1-.3 3.200 1.200a11 11 0 0 1 5.800 0c2.200-1.500 3.200-1.200 3.200-1.200.6 1.600.2 2.800.1 3.100.8.8 1.200 1.800 1.200 3.100 0 4.400-2.700 5.400-5.300 5.700.4.4.8 1.100.8 2.200v3.200c0 .3.2.7.8.6A11.500 11.500 0 0 0 12 .5z"/></svg>GitHub</a>
+<a class="card" href="https://www.linkedin.com/in/priyadharshini2006/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24"><path d="M4.980 3.500a2.500 2.500 0 1 1 0 5 2.500 2.500 0 0 1 0-5zM3 9.500h4V21H3zM9.500 9.500h3.800v1.600h.1c.5-1 1.800-2 3.800-2 4 0 4.800 2.600 4.800 6V21h-4v-5c0-1.200 0-2.800-1.700-2.800s-2 1.300-2 2.700V21h-4z"/></svg>LinkedIn</a>
+</div></div>
+<form class="card" id="cf" novalidate>
+<label>Name<input name="name" autocomplete="name" required></label>
+<label>Email<input name="email" type="email" autocomplete="email" required></label>
+<label>Message<textarea name="message" required></textarea></label>
+<button class="btn pri" type="submit">Send Message</button>
+<p class="msg" role="status" aria-live="polite"></p>
+</form>
+</div></section>
+</main>
+
+<footer><div class="wrap">&copy; 2026 Priyadharshini C. | Data Analyst Portfolio</div></footer>
+
+<script>
+const btn=document.querySelector('.menu'),ul=document.getElementById('links');
+btn.addEventListener('click',()=>{const o=ul.classList.toggle('open');btn.setAttribute('aria-expanded',o)});
+ul.addEventListener('click',e=>{if(e.target.tagName==='A'){ul.classList.remove('open');btn.setAttribute('aria-expanded',false)}});
+const links=[...ul.querySelectorAll('a')];
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)links.forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id))}),{rootMargin:'-45% 0px -50% 0px'});
+document.querySelectorAll('main section').forEach(s=>io.observe(s));
+document.getElementById('cf').addEventListener('submit',e=>{
+ e.preventDefault();const f=e.target,m=f.querySelector('.msg');
+ if(!f.name.value.trim()||!/^\S+@\S+\.\S+$/.test(f.email.value)||!f.message.value.trim()){m.style.color='#b42318';m.textContent='Please fill in your name, a valid email, and a message.';return}
+ // TODO: connect to a form service (Formspree, Netlify Forms, EmailJS)
+ m.style.color='#0b7a79';m.textContent='Thanks, your message is ready to send once the form is connected.';f.reset();
+});
+</script>
+</body>
+</html>
